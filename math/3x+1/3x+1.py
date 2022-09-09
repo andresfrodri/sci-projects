@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 n=int(input('Put the number to see it\'s steps: '))
+initial=n
 counter=0
 listan1=[n]
 listaC1=[counter]
@@ -29,5 +30,5 @@ array2=np.array(listan1)
 plt.plot(array1,array2)
 plt.xlabel('Steps')
 plt.ylabel('Number')
-plt.title(f'3x+1 for {n}')
+plt.title(f'3x+1 for {initial}')
 plt.show()
