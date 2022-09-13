@@ -6,21 +6,15 @@ initial=n
 counter=0
 listan1=[n]
 listaC1=[counter]
-while n != -10 and n != -2 and n !=-34 and n != -1:
+while n != 1:
   print(counter)
   if n%2!=0:
-    if n<0:
-      n=(3*n+1)*(-1)**(counter)
-    else:
-      n=(3*n+1)*(-1)**(counter-1)
+    n=(3*n+1)
     counter += 1
     listan1.append(n)
     listaC1.append(counter)
   else:
-    if n<0:
-      n=(n//2)*(-1)**(counter)
-    else:
-      n=(n//2)*(-1)**(counter-1)
+    n=(n//2)
     counter += 1
     listan1.append(n)
     listaC1.append(counter)
