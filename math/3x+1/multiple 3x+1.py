@@ -26,5 +26,4 @@ for i in l2:
 plt.xlabel('Steps')
 plt.ylabel('Number')
 plt.title(f'3x+1 for 1-{n3}')
-plt.legend()
 plt.show()
