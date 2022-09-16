@@ -38,7 +38,7 @@ while n1 != 1:
 array3=np.array(listaC2)
 array4=np.array(listan2)
 plt.plot(array3,array4, label='line 2')
-
+plt.legend()
 plt.xlabel('Steps')
 plt.ylabel('Number')
 plt.title(f'3x+1 for two')
