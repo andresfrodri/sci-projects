@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 n=int(input('Put the number to see it\'s steps: '))
+initial1=n
 contador=1
 listan1=[n]
 listaC1=[contador]
@@ -19,8 +20,9 @@ while n != 1:
     listaC1.append(contador)
 array1=np.array(listaC1)
 array2=np.array(listan1)
-plt.plot(array1,array2, label='line 1')
+plt.plot(array1,array2, label=f'{initial1}')
 n1=int(input('Put another number to see it\'s steps: '))
+initial2=n1
 contador2=1
 listan2=[n1]
 listaC2=[contador2]
@@ -37,9 +39,9 @@ while n1 != 1:
     listaC2.append(contador2)
 array3=np.array(listaC2)
 array4=np.array(listan2)
-plt.plot(array3,array4, label='line 2')
+plt.plot(array3,array4, label=f'{initial2}')
 plt.legend()
 plt.xlabel('Steps')
 plt.ylabel('Number')
-plt.title(f'3x+1 for two')
+plt.title(f'3x+1 for two numbers ({initial1} and {initial2})')
 plt.show()
